@@ -21,7 +21,7 @@ public class PaymentService {
         this.strategy = strategy;
     }
 
-    private int getTotal() {
+    public int getTotal() {
         return includeDeliveryFee ? cost + 10 : cost;
     }
 
