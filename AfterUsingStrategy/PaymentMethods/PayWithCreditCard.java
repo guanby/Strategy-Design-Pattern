@@ -10,14 +10,14 @@ public class PayWithCreditCard implements PaymentStrategy {
     @Override
     public void collectPaymentDetails() {
         // Pop-up to collect card details...
-        card = new CreditCard("cardNumber", "expiryDate", "cvv");
+        card = new CreditCard("5555444433332222", "expiryDate", "cvv");
         System.out.println("Collecting Card Details...");
     }
 
     @Override
     public boolean validatePaymentDetails() {
         // Validate credit card...
-        System.out.println("Validating Card Info: " + card);
+        System.out.println("Validating Card Info: " + card.getNumber());
         return true;
     }
 
