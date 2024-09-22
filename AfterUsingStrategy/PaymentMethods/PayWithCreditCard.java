@@ -1,4 +1,7 @@
-import After.CreditCard;
+package AfterUsingStrategy.PaymentMethods;
+
+import AfterUsingStrategy.PaymentMethods.CreditCard;
+import AfterUsingStrategy.PaymentStrategy;
 
 public class PayWithCreditCard implements PaymentStrategy {
 

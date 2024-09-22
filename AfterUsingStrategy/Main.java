@@ -1,7 +1,14 @@
 /*
-     * Video Reference: https://youtu.be/Nrwj3gZiuJU
+* Video Reference: https://youtu.be/Nrwj3gZiuJU
 */
-    
+
+package AfterUsingStrategy;
+
+/*
+ * This is the main class where we will test our strategy pattern.
+ * Acting as a client here.
+ */
+
 import PayWithCreditCard;
 import PayWithPayNow;
 

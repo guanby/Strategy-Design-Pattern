@@ -1,10 +1,10 @@
-import lombok.Setter;
+package AfterUsingStrategy;
 
-@Setter
+import AfterUsingStrategy.PaymentMethods.PaymentStrategy;
 public class PaymentService {
 
     private int cost;
-    private boolean includeDelivery = true;
+    private boolean includeDeliveryFee = true;
 
     private PaymentStrategy strategy;
 
@@ -16,8 +16,12 @@ public class PaymentService {
         }
     }
 
+    public void setStrategy(PaymentStrategy strategy){
+        this.strategy = strategy;
+    }
+
     private int getTotal() {
-        return includeDelivery ? cost + 10 : cost;
+        return includeDeliveryFee ? cost + 10 : cost;
     }
 
 }
