@@ -1,16 +1,25 @@
-package AfterUsingStrategy.PaymentMethods;
+package after.paymentmethods;
 
 public class CreditCard {
 
     private int amount = 1_000;
-    private final String number = null;
-    private final String date = null;
-    private final String cvv = null;
+    private String number = null;
+    private String date = null;
+    private String cvv = null;
 
     // Constructor
     public CreditCard(String number, String date, String cvv) {
         this.number = number;
         this.date = date;
         this.cvv = cvv;
+    }
+
+    // Getters and Setters
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 }

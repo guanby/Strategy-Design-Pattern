@@ -1,6 +1,6 @@
-package AfterUsingStrategy.PaymentMethods;
+package after.paymentmethods;
 
-import AfterUsingStrategy.PaymentStrategy;
+import after.paymentmethods.PaymentStrategy;
 
 public class PayWithPayNow implements PaymentStrategy {
 

@@ -1,4 +1,4 @@
-package AfterUsingStrategy.PaymentMethods;
+package after.paymentmethods;
 
 public interface PaymentStrategy {
 

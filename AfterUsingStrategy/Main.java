@@ -2,15 +2,15 @@
 * Video Reference: https://youtu.be/Nrwj3gZiuJU
 */
 
-package AfterUsingStrategy;
+package after;
 
 /*
  * This is the main class where we will test our strategy pattern.
  * Acting as a client here.
  */
 
-import PayWithCreditCard;
-import PayWithPayNow;
+import after.paymentmethods.*;
+import after.PaymentService;
 
 public class Main {
 

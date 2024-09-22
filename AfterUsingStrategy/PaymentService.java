@@ -1,6 +1,7 @@
-package AfterUsingStrategy;
+package after;
 
-import AfterUsingStrategy.PaymentMethods.PaymentStrategy;
+import after.paymentmethods.*;
+
 public class PaymentService {
 
     private int cost;
