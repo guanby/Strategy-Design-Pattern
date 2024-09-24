@@ -10,14 +10,14 @@ public class PaymentService {
 
     public void processOrder(int cost) {
         this.cost = cost;
-        strategy.collectPaymentDetails();
-        if (strategy.validatePaymentDetails()) {
-            strategy.pay(getTotal());
+        selectedPaymentStrategy.collectPaymentDetails();
+        if (selectedPaymentStrategy.validatePaymentDetails()) {
+            selectedPaymentStrategy.pay(getTotal());
         }
     }
 
-    public void setStrategy(PaymentStrategy strategy){
-        this.strategy = strategy;
+    public void setStrategy(PaymentStrategy selectedPaymentStrategy){
+        this.selectedPaymentStrategy = selectedPaymentStrategy;
     }
 
     public int getTotal() {
