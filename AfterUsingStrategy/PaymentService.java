@@ -6,8 +6,7 @@ public class PaymentService {
 
     private int cost;
     private boolean includeDeliveryFee = true;
-
-    private PaymentStrategy strategy;
+    private PaymentStrategy selectedPaymentStrategy;
 
     public void processOrder(int cost) {
         this.cost = cost;
@@ -24,5 +23,4 @@ public class PaymentService {
     public int getTotal() {
         return includeDeliveryFee ? cost + 10 : cost;
     }
-
 }
